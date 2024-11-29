@@ -12,4 +12,12 @@ return {
     end,
     ft = { 'markdown' },
   },
+  {
+    'navarasu/onedark.nvim',
+    opts = {
+      style = 'warm',
+      transparent = true,
+      term_colors = true,
+    },
+  },
 }
