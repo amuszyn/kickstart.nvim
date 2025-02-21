@@ -7,7 +7,7 @@ local opt = {
   columns = {
     'icon',
     --'permissions',
-    --'size',
+    'size',
     --'mtime',
   },
   -- Buffer-local options to use for oil buffers
@@ -139,7 +139,7 @@ local opt = {
     -- max_width = {100, 0.8} means "the lesser of 100 columns or 80% of total"
     max_width = 0.9,
     -- min_width = {40, 0.4} means "the greater of 40 columns or 40% of total"
-    min_width = { 40, 0.4 },
+    min_width = 0.7,
     -- optionally define an integer/float for the exact width of the preview window
     width = nil,
     -- Height dimensions can be integers or a float between 0 and 1 (e.g. 0.4 for 40%)
@@ -186,5 +186,6 @@ return {
   opts = opt,
   -- Optional dependencies
   dependencies = { 'nvim-tree/nvim-web-devicons' }, -- use if prefer nvim-web-devicons
-  vim.keymap.set('n', '<leader>e', '<CMD>Oil --float<CR>', { desc = '[E]nter Oil' }),
+  vim.keymap.set('n', '<leader>ef', '<CMD>Oil --float<CR>', { desc = '[E]nter Oil [F]loat' }),
+  vim.keymap.set('n', '<leader>ee', '<CMD>Oil --preview<CR>', { desc = '[E]nter Oil' }),
 }
