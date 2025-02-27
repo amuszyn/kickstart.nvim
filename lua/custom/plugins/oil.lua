@@ -186,6 +186,6 @@ return {
   opts = opt,
   -- Optional dependencies
   dependencies = { 'nvim-tree/nvim-web-devicons' }, -- use if prefer nvim-web-devicons
-  vim.keymap.set('n', '<leader>ef', '<CMD>Oil --float<CR>', { desc = '[E]nter Oil [F]loat' }),
-  vim.keymap.set('n', '<leader>ee', '<CMD>Oil --preview<CR>', { desc = '[E]nter Oil' }),
+  --vim.keymap.set('n', '<leader>ef', '<CMD>Oil --float<CR>', { desc = '[E]nter Oil [F]loat' }),
+  vim.keymap.set('n', '<leader>e', '<CMD>Oil --preview<CR>', { desc = '[E]nter Oil' }),
 }
