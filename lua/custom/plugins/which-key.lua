@@ -14,7 +14,9 @@ return { -- Useful plugin to show you pending keybinds.
       { '<leader>t', desc = '[T]oggle' },
       { '<leader>h', desc = 'Git [H]unk' },
       { '<leader>g', desc = '[G]it Search' },
+      { 'm', desc = '[M]ini' },
     }
+
     -- visual mode
     wk.add({
       { '<leader>h', 'Git [H]unk' },
