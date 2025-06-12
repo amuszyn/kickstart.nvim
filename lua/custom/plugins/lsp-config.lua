@@ -157,7 +157,7 @@ return { -- LSP Configuration & Plugins
     local servers = {
       clangd = {},
       gopls = {},
-      pyright = {},
+      pyrefly = {},
       rust_analyzer = {},
       markdownlint = {},
       -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
